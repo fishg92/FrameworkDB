@@ -1,0 +1,7 @@
+c:\users\gfish.teamnorthwoods\documents\visual studio 2015\Projects\FrameworkDB\bin\Debug\FrameworkDB.dacpac
+c:\users\gfish.teamnorthwoods\documents\visual studio 2015\Projects\FrameworkDB\obj\Debug\Model.xml
+c:\users\gfish.teamnorthwoods\documents\visual studio 2015\Projects\FrameworkDB\obj\Debug\refactor.xml
+c:\users\gfish.teamnorthwoods\documents\visual studio 2015\Projects\FrameworkDB\obj\Debug\postdeploy.sql
+c:\users\gfish.teamnorthwoods\documents\visual studio 2015\Projects\FrameworkDB\obj\Debug\predeploy.sql
+c:\users\gfish.teamnorthwoods\documents\visual studio 2015\Projects\FrameworkDB\obj\Debug\FrameworkDB.dll
+c:\users\gfish.teamnorthwoods\documents\visual studio 2015\Projects\FrameworkDB\obj\Debug\FrameworkDB.pdb

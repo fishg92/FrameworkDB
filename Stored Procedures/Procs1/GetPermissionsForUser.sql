@@ -1,0 +1,9 @@
+﻿create proc GetPermissionsForUser
+	@pkApplicationUser decimal
+as
+
+select distinct JoinrefRolerefPermission.fkrefPermission
+from	JoinrefRolerefPermission
+join JoinApplicationUserrefRole
+	on JoinrefRolerefPermission.fkrefRole = JoinApplicationUserrefRole.fkrefRole
+where JoinApplicationUserrefRole.fkApplicationUser = @pkApplicationUser

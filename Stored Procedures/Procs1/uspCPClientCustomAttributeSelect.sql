@@ -1,0 +1,135 @@
+﻿----------------------------------------------------------------------------
+-- Select a single record from CPClientCustomAttribute
+----------------------------------------------------------------------------
+CREATE PROC [dbo].[uspCPClientCustomAttributeSelect]
+(	@pkCPClientCustomAttribute decimal(18, 0) = NULL,
+	@fkCPClient decimal(18, 0) = NULL,
+	@DATA1 varchar(250) = NULL,
+	@DATA2 varchar(250) = NULL,
+	@DATA3 varchar(250) = NULL,
+	@DATA4 varchar(250) = NULL,
+	@DATA5 varchar(250) = NULL,
+	@DATA6 varchar(250) = NULL,
+	@DATA7 varchar(250) = NULL,
+	@DATA8 varchar(250) = NULL,
+	@DATA9 varchar(250) = NULL,
+	@DATA10 varchar(250) = NULL,
+	@DATA11 varchar(250) = NULL,
+	@DATA12 varchar(250) = NULL,
+	@DATA13 varchar(250) = NULL,
+	@DATA14 varchar(250) = NULL,
+	@DATA15 varchar(250) = NULL,
+	@DATA16 varchar(250) = NULL,
+	@DATA17 varchar(250) = NULL,
+	@DATA18 varchar(250) = NULL,
+	@DATA19 varchar(250) = NULL,
+	@DATA20 varchar(250) = NULL,
+	@DATA21 varchar(250) = NULL,
+	@DATA22 varchar(250) = NULL,
+	@DATA23 varchar(250) = NULL,
+	@DATA24 varchar(250) = NULL,
+	@DATA25 varchar(250) = NULL,
+	@DATA26 varchar(250) = NULL,
+	@DATA27 varchar(250) = NULL,
+	@DATA28 varchar(250) = NULL,
+	@DATA29 varchar(250) = NULL,
+	@DATA30 varchar(250) = NULL,
+	@DATA31 varchar(250) = NULL,
+	@DATA32 varchar(250) = NULL,
+	@DATA33 varchar(250) = NULL,
+	@DATA34 varchar(250) = NULL,
+	@DATA35 varchar(250) = NULL,
+	@DATA36 varchar(250) = NULL,
+	@DATA37 varchar(250) = NULL,
+	@DATA38 varchar(250) = NULL,
+	@DATA39 varchar(250) = NULL,
+	@DATA40 varchar(250) = NULL
+)
+AS
+
+SELECT	pkCPClientCustomAttribute,
+	fkCPClient,
+	DATA1,
+	DATA2,
+	DATA3,
+	DATA4,
+	DATA5,
+	DATA6,
+	DATA7,
+	DATA8,
+	DATA9,
+	DATA10,
+	DATA11,
+	DATA12,
+	DATA13,
+	DATA14,
+	DATA15,
+	DATA16,
+	DATA17,
+	DATA18,
+	DATA19,
+	DATA20,
+	DATA21,
+	DATA22,
+	DATA23,
+	DATA24,
+	DATA25,
+	DATA26,
+	DATA27,
+	DATA28,
+	DATA29,
+	DATA30,
+	DATA31,
+	DATA32,
+	DATA33,
+	DATA34,
+	DATA35,
+	DATA36,
+	DATA37,
+	DATA38,
+	DATA39,
+	DATA40
+FROM	CPClientCustomAttribute
+WHERE 	(@pkCPClientCustomAttribute IS NULL OR pkCPClientCustomAttribute = @pkCPClientCustomAttribute)
+ AND 	(@fkCPClient IS NULL OR fkCPClient = @fkCPClient)
+ AND 	(@DATA1 IS NULL OR DATA1 LIKE @DATA1 + '%')
+ AND 	(@DATA2 IS NULL OR DATA2 LIKE @DATA2 + '%')
+ AND 	(@DATA3 IS NULL OR DATA3 LIKE @DATA3 + '%')
+ AND 	(@DATA4 IS NULL OR DATA4 LIKE @DATA4 + '%')
+ AND 	(@DATA5 IS NULL OR DATA5 LIKE @DATA5 + '%')
+ AND 	(@DATA6 IS NULL OR DATA6 LIKE @DATA6 + '%')
+ AND 	(@DATA7 IS NULL OR DATA7 LIKE @DATA7 + '%')
+ AND 	(@DATA8 IS NULL OR DATA8 LIKE @DATA8 + '%')
+ AND 	(@DATA9 IS NULL OR DATA9 LIKE @DATA9 + '%')
+ AND 	(@DATA10 IS NULL OR DATA10 LIKE @DATA10 + '%')
+ AND 	(@DATA11 IS NULL OR DATA11 LIKE @DATA11 + '%')
+ AND 	(@DATA12 IS NULL OR DATA12 LIKE @DATA12 + '%')
+ AND 	(@DATA13 IS NULL OR DATA13 LIKE @DATA13 + '%')
+ AND 	(@DATA14 IS NULL OR DATA14 LIKE @DATA14 + '%')
+ AND 	(@DATA15 IS NULL OR DATA15 LIKE @DATA15 + '%')
+ AND 	(@DATA16 IS NULL OR DATA16 LIKE @DATA16 + '%')
+ AND 	(@DATA17 IS NULL OR DATA17 LIKE @DATA17 + '%')
+ AND 	(@DATA18 IS NULL OR DATA18 LIKE @DATA18 + '%')
+ AND 	(@DATA19 IS NULL OR DATA19 LIKE @DATA19 + '%')
+ AND 	(@DATA20 IS NULL OR DATA20 LIKE @DATA20 + '%')
+ AND 	(@DATA21 IS NULL OR DATA21 LIKE @DATA21 + '%')
+ AND 	(@DATA22 IS NULL OR DATA22 LIKE @DATA22 + '%')
+ AND 	(@DATA23 IS NULL OR DATA23 LIKE @DATA23 + '%')
+ AND 	(@DATA24 IS NULL OR DATA24 LIKE @DATA24 + '%')
+ AND 	(@DATA25 IS NULL OR DATA25 LIKE @DATA25 + '%')
+ AND 	(@DATA26 IS NULL OR DATA26 LIKE @DATA26 + '%')
+ AND 	(@DATA27 IS NULL OR DATA27 LIKE @DATA27 + '%')
+ AND 	(@DATA28 IS NULL OR DATA28 LIKE @DATA28 + '%')
+ AND 	(@DATA29 IS NULL OR DATA29 LIKE @DATA29 + '%')
+ AND 	(@DATA30 IS NULL OR DATA30 LIKE @DATA30 + '%')
+ AND 	(@DATA31 IS NULL OR DATA31 LIKE @DATA31 + '%')
+ AND 	(@DATA32 IS NULL OR DATA32 LIKE @DATA32 + '%')
+ AND 	(@DATA33 IS NULL OR DATA33 LIKE @DATA33 + '%')
+ AND 	(@DATA34 IS NULL OR DATA34 LIKE @DATA34 + '%')
+ AND 	(@DATA35 IS NULL OR DATA35 LIKE @DATA35 + '%')
+ AND 	(@DATA36 IS NULL OR DATA36 LIKE @DATA36 + '%')
+ AND 	(@DATA37 IS NULL OR DATA37 LIKE @DATA37 + '%')
+ AND 	(@DATA38 IS NULL OR DATA38 LIKE @DATA38 + '%')
+ AND 	(@DATA39 IS NULL OR DATA39 LIKE @DATA39 + '%')
+ AND 	(@DATA40 IS NULL OR DATA40 LIKE @DATA40 + '%')
+

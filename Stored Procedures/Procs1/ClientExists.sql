@@ -1,0 +1,8 @@
+﻿CREATE PROCEDURE [api].[ClientExists]
+	@ClientID decimal
+AS
+
+IF EXISTS (SELECT * FROM CPClient WHERE pkCPClient = @ClientID)
+	SELECT CAST(1 AS BIT)
+ELSE
+	SELECT CAST(0 AS BIT)
